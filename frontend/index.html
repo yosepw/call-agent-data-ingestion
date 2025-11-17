@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Call Agent  Admin UI (Minimal)</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 16px; }
+      input, textarea { width: 100%; padding: 8px; margin: 4px 0 12px; }
+      button { padding: 8px 12px; }
+      .card { border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <h1>Call Agent  Admin UI (Minimal)</h1>
+    <div class="card">
+      <h3>Onboard SIP Trunk</h3>
+      <input id="trunk-name" placeholder="Trunk name" />
+      <input id="sip-url" placeholder="sip:..." />
+      <input id="username" placeholder="username (optional)" />
+      <input id="password" placeholder="password (optional)" />
+      <button id="btn-onboard">Onboard</button>
+      <pre id="onboard-res"></pre>
+    </div>
+
+    <div class="card">
+      <h3>Start Call Task</h3>
+      <input id="task-id" placeholder="task id" />
+      <textarea id="script" placeholder="script or prompt"></textarea>
+      <input id="concurrency" placeholder="concurrency (1)" />
+      <button id="btn-start">Start</button>
+      <pre id="start-res"></pre>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
